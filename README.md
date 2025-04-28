@@ -11,14 +11,14 @@ Este projeto consiste em um script Bash para monitorar a disponibilidade de um w
 * **ufw (Uncomplicated Firewall):** Interface para iptables, utilizada para configurar o firewall (durante os testes de simulação de queda).
 * **Webhook Discord:** Mecanismo para enviar mensagens automatizadas de um aplicativo para outro. Utilizados para enviar alertas para o Discord.
 * **sleep:** Comando para pausar a execução do script por um determinado período, utilizado para definir o intervalo de monitoramento.
-* **Redirecionamento de Output (`>>`):** Utilizado para escrever logs em um arquivo específico (`/var/log/monitor_site.log`).
+* **Redirecionamento de Output (`>>`):** Utilizado para escrever logs em um arquivo específico (`/var/log/monitoramento_projeto.log`).
 
 ## Funcionalidades
 
 * **Monitoramento de Website:** Verifica a disponibilidade de um website a cada minuto através de uma requisição HTTP HEAD.
 * **Detecção de falha:** Identifica quando o website não responde ou retorna códigos de erro.
 * **Notificações:** Envia alertas em tempo real para Discord (via Webhook)
-* **Logging:** Registra a data, hora e status da verificação (disponível/inacessível) em um arquivo de log (`/var/log/monitor_site.log`).
+* **Logging:** Registra a data, hora e status da verificação (disponível/inacessível) em um arquivo de log (`/var/log/monitoramento_projeto.log`).
 * **Configuração Simples:** Permite configurar facilmente a URL do website a ser monitorado e as URLs/tokens dos webhooks e API do Telegram.
 * **Timeout:** Define um tempo máximo de espera para a resposta do servidor web.
 
